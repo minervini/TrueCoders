@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace TrueCoders
 {
@@ -24,6 +25,18 @@ namespace TrueCoders
             stefano.FirstName = "Stefano";
             stefano.LastName = "Minervini";
             stefano.HairColor = "Dark Brown";
+
+            List<People> TrueCoders = new List<People>();
+
+            TrueCoders.Add(michael);
+            TrueCoders.Add(daniel);
+            TrueCoders.Add(stefano);
+
+            foreach (var person in TrueCoders)
+            {
+                Console.WriteLine($"Age: (Age), Name: (FirstName) (LastName), Hair: (HairColor)");
+            }
+
         }
     }
 }
