@@ -34,7 +34,7 @@ namespace TrueCoders
 
             foreach (var person in TrueCoders)
             {
-                Console.WriteLine($"Age: (Age), Name: (FirstName) (LastName), Hair: (HairColor)");
+                Console.WriteLine($"Age: {person.Age}, Name: {person.FirstName} {person.LastName}, Hair: {person.HairColor}");
             }
 
         }
