@@ -7,34 +7,37 @@ namespace TrueCoders
     {
         static void Main(string[] args)
         {
-            var michael = new People();
-            var daniel = new People();
-            var stefano = new People();
+            var michaelPeople = new People();
+            var danielPeople = new People();
+            var stefanoPeople = new People();
 
-            michael.Age = 32;
-            michael.FirstName = "Michael";
-            michael.LastName = "Doyle";
-            michael.HairColor = "Brown";
+            michaelPeople.Age = 32;
+            michaelPeople.FirstName = "Michael";
+            michaelPeople.LastName = "Doyle";
+            michaelPeople.HairColor = "Brown";
 
-            daniel.Age = 26;
-            daniel.FirstName = "Daniel";
-            daniel.LastName = "Walsh";
-            daniel.HairColor = "Brownish";
+            danielPeople.Age = 26;
+            danielPeople.FirstName = "Daniel";
+            danielPeople.LastName = "Walsh";
+            danielPeople.HairColor = "Brownish";
 
-            stefano.Age = 55;
-            stefano.FirstName = "Stefano";
-            stefano.LastName = "Minervini";
-            stefano.HairColor = "Dark Brown";
+            stefanoPeople.Age = 55;
+            stefanoPeople.FirstName = "Stefano";
+            stefanoPeople.LastName = "Minervini";
+            stefanoPeople.HairColor = "Dark Brown";
+
+            var bobPeople = new People(22, "Bobby", "Jones", "Blonde");
 
             List<People> TrueCoders = new List<People>();
 
-            TrueCoders.Add(michael);
-            TrueCoders.Add(daniel);
-            TrueCoders.Add(stefano);
+            TrueCoders.Add(michaelPeople);
+            TrueCoders.Add(danielPeople);
+            TrueCoders.Add(stefanoPeople);
+            TrueCoders.Add(bobPeople);
 
             foreach (var person in TrueCoders)
             {
-                Console.WriteLine($"Age: {person.Age}, Name: {person.FirstName} {person.LastName}, Hair: {person.HairColor}");
+                Console.WriteLine($"Name: {person.FirstName} {person.LastName}, Age: {person.Age}, Hair: {person.HairColor}");
             }
 
         }
